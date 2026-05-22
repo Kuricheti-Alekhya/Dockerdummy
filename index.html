@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#f4f4f4;
+    }
+
+    header{
+        background:#2c3e50;
+        color:white;
+        padding:20px;
+        text-align:center;
+    }
+
+    nav{
+        background:#34495e;
+        text-align:center;
+        padding:10px;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:0 15px;
+        font-weight:bold;
+    }
+
+    .hero{
+        height:300px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        background:linear-gradient(135deg,#3498db,#8e44ad);
+        color:white;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .container{
+        width:80%;
+        margin:auto;
+        padding:40px 0;
+    }
+
+    .cards{
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        flex:1;
+        min-width:250px;
+        background:white;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        text-align:center;
+    }
+
+    button{
+        background:#3498db;
+        color:white;
+        border:none;
+        padding:10px 20px;
+        margin-top:15px;
+        cursor:pointer;
+        border-radius:5px;
+    }
+
+    footer{
+        background:#2c3e50;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio Website</h1>
+    <p>HTML • CSS • JavaScript</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome</h1>
+    <p>Create beautiful websites with HTML, CSS and JavaScript</p>
+    <button onclick="showMessage()">Click Me</button>
+</section>
+
+<div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern responsive website design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Fast and secure web applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>24/7 maintenance and assistance.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showMessage(){
+    alert("Hello! Welcome to my website.");
+}
+</script>
+
+</body>
+</html>
